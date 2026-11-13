@@ -1,0 +1,174 @@
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background-color: #e6f2ff;
+ color: #333;
+}
+
+header {
+ background-color: #1a3a5c;
+ color: white;
+ text-align: center;
+ padding: 25px 20px;
+}
+
+header p {
+ margin: 5px 0 0 0;
+ opacity: 0.85;
+}
+
+nav {
+ background-color: #2a5298;
+ text-align: center;
+ padding: 10px;
+}
+
+nav a {
+ color: white;
+ text-decoration: none;
+ margin: 0 15px;
+ font-size: 15px;
+}
+
+nav a:hover {
+ text-decoration: underline;
+}
+
+main {
+ max-width: 550px;
+ margin: 30px auto;
+ padding: 0 20px;
+}
+
+section {
+ background-color: white;
+ border-radius: 8px;
+ padding: 20px;
+ margin-bottom: 25px;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+h2 {
+ margin-top: 0;
+ color: #1a3a5c;
+ font-size: 18px;
+}
+
+#countText {
+ font-size: 14px;
+ color: #666;
+ font-weight: normal;
+}
+
+/* Input area inside Add Task section */
+.input-area {
+ display: flex;
+ gap: 8px;
+ flex-wrap: wrap;
+}
+
+#taskInput {
+ flex: 1;
+ min-width: 160px;
+ padding: 8px 10px;
+ border: 1px solid #aaa;
+ border-radius: 4px;
+ font-size: 14px;
+}
+
+#prioritySelect {
+ padding: 8px 10px;
+ border: 1px solid #aaa;
+ border-radius: 4px;
+ font-size: 14px;
+}
+
+#addBtn {
+ padding: 8px 18px;
+ background-color: #1a3a5c;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ font-size: 14px;
+}
+
+#addBtn:hover {
+ background-color: #2a5298;
+}
+
+/* Task list */
+ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+li {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: #f4f8ff;
+ border: 1px solid #d0e4ff;
+ border-left: 4px solid #2a5298;
+ border-radius: 5px;
+ padding: 10px 12px;
+ margin-bottom: 10px;
+ gap: 10px;
+}
+
+li.important {
+ border-left-color: #c0392b;
+}
+
+.task-left {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ flex: 1;
+}
+
+li span {
+ font-size: 14px;
+}
+
+/* Strikethrough when task is completed */
+.completed {
+ text-decoration: line-through;
+ color: #999;
+}
+
+.priority-label {
+ font-size: 11px;
+ padding: 2px 7px;
+ border-radius: 10px;
+ background-color: #d0e4ff;
+ color: #1a3a5c;
+}
+
+li.important .priority-label {
+ background-color: #fde8e8;
+ color: #c0392b;
+}
+
+.delete-btn {
+ background-color: #d9534f;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ padding: 5px 10px;
+ font-size: 12px;
+ cursor: pointer;
+}
+
+.delete-btn:hover {
+ background-color: #c0392b;
+}
+
+footer {
+ background-color: #1a3a5c;
+ color: #ccc;
+ text-align: center;
+ padding: 15px;
+ font-size: 13px;
+}

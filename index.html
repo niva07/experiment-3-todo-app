@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My To-Do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+ <h1>My To-Do List</h1>
+ <p>Keep track of your daily tasks and assignments</p>
+</header>
+
+<nav>
+ <a href="#add-task">Add Task</a>
+ <a href="#task-list">My Tasks</a>
+</nav>
+
+<main>
+
+ <!-- Section to add a new task -->
+ <section id="add-task">
+  <h2>Add a New Task</h2>
+  <div class="input-area">
+   <input type="text" id="taskInput" placeholder="Enter your task here...">
+   <select id="prioritySelect">
+    <option value="Normal">Normal</option>
+    <option value="Important">Important</option>
+   </select>
+   <button id="addBtn">Add</button>
+  </div>
+ </section>
+
+ <!-- Task list section -->
+ <section id="task-list">
+  <h2>Tasks <span id="countText">(3 tasks)</span></h2>
+  <ul id="taskList"></ul>
+ </section>
+
+</main>
+
+<footer>
+ <p>&copy; 2026 My To-Do List. Web Design Lab Experiment 3.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
